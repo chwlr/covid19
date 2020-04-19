@@ -131,6 +131,10 @@ li a:hover {
   background-color: #3792cb !important;
 }
 
+table {
+  text-align: center;
+}
+
 #table_caption {
   text-align: center;
   background-color: #3792cb;
