@@ -61,7 +61,6 @@ nav a {
 
 .item1 {
   grid-area: item1;
-  border-radius: 20px;
 }
 
 .item2 {
@@ -76,10 +75,12 @@ nav a {
   grid-area: item4;
 }
 
-#kerr {
+#kerr,
+#odp,
+#pdp,
+#kert {
   background-color: #3792cb;
   color: white;
-  padding: 5px;
 }
 
 #kerr h5 {
