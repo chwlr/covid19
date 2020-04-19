@@ -131,6 +131,13 @@ li a:hover {
   background-color: #3792cb !important;
 }
 
+#table_caption {
+  text-align: center;
+  background-color: #3792cb;
+  color: white;
+}
+
+
 #caption_title_rs {
   font-weight: 600;
 }
@@ -177,7 +184,7 @@ li a:hover {
 }
 
 #content-one p {
-  text-align: left;
+  text-align: justify;
 }
 
 #content-one #title {
@@ -216,6 +223,10 @@ footer {
   #himbauan {
     display: flex;
     flex-direction: row;
+  }
+
+  #content-one p {
+    text-align: left;
   }
 }
 

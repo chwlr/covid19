@@ -312,8 +312,37 @@
         <img class="img-fluid" src="assets/covid_heatmap.png" alt="" />
       </div>
     </section>
-    <section class="container covid-grafik mt-5">Grafik covid19</section>
-    <section class="container rs_rujukan mt-5">
+    <section class="container mt-5" id="covid-grafik">
+      <div id="grafik"></div>
+      <div class="table-responsive-md" id="table">
+        <table class="table table-bordered table-stiped">
+          <thead>
+            <th id="table_caption" colspan="7">REKAP PER KECAMATAN</th>
+            <tr id="table_caption">
+              <th scope="col">No.</th>
+              <th scope="col">Kecamatan</th>
+              <th scope="col">KERR</th>
+              <th scope="col">KERT</th>
+              <th scope="col">ODP (Proses Pemantauan)</th>
+              <th scope="col">PDP (Menuggu Hasil)</th>
+              <th scope="col">PDP (Positif Covid19)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section class="container mt-5" id="rs_rujukan">
       <p id="caption_title_rs">Daftar Rumah Sakit Rujukan di Kota Manado</p>
       <p id="caption_rs">
         Berikut ini adalah rumah sakit yang menjadi rujukan untuk pasien dengan
@@ -365,7 +394,7 @@
         ></iframe>
       </div>
     </section>
-    <footer>
+    <footer class="container">
       <p>
         Powered by <strong>PANADA</strong> &#169;2020 UPTD Pengelolaan Data dan
         Informasi Geospasial Kota Manado.
