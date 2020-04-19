@@ -22,7 +22,7 @@
         <img
           class=""
           src="assets/pemkot-covid copy.png"
-          height="40"
+          height="35"
           width="265"
           alt="brand-pemkot"
         />
@@ -71,16 +71,16 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="assets/Group 406.png" class="d-block w-100" alt="..." />
+            <img src="assets/Group 406-1.png" class="d-block w-100" alt="..." />
           </div>
           <div class="carousel-item">
-            <img src="assets/Group 402.png" class="d-block w-100" alt="..." />
+            <img src="assets/Group 402-1.png" class="d-block w-100" alt="..." />
           </div>
           <div class="carousel-item">
-            <img src="assets/Group 405.png" class="d-block w-100" alt="..." />
+            <img src="assets/Group 405-1.png" class="d-block w-100" alt="..." />
           </div>
           <div class="carousel-item">
-            <img src="assets/Group 296.png" class="d-block w-100" alt="..." />
+            <img src="assets/Group 296-1.png" class="d-block w-100" alt="..." />
           </div>
         </div>
         <a
@@ -103,42 +103,42 @@
         </a>
       </div>
     </section>
-    <section class="container rounded-sm status_covid">
+    <section class="container rounded-sm" id="status_covid">
       <div
         class="card shadow p-3 my-5 justify-content-center"
         id="jumlah_kasus"
       >
         <div class="card-body" id="jumlah_kasus_title">
-          <h4 id="jk_title">Jumlah Kasus di Kota Manado Saat Ini</h4>
+          <h5 id="jk_title">Jumlah Kasus di Kota Manado Saat Ini</h5>
           <h6 id="jksub_title">Update terakhir : xxx.xxx</h6>
         </div>
-        <div class="d-flex flex-column" id="detail_status">
+        <div class="detail_status">
           <div
             class="card-body d-flex flex-column justify-content-center"
             id="terkonfirmasi"
           >
-            <h2 id="angka_terkonfirmasi">42</h2>
+            <h4 id="angka_terkonfirmasi">42</h4>
             <h6 id="status_terkonfirmasi">Terkonfirmasi</h6>
           </div>
           <div
             class="card-body d-flex flex-column justify-content-center"
             id="positif"
           >
-            <h2 id="angka_positif">2</h2>
+            <h4 id="angka_positif">2</h4>
             <h6 id="status_positif">Positif Covid-19</h6>
           </div>
           <div
             class="card-body d-flex flex-column justify-content-center"
             id="sembuh"
           >
-            <h2 id="angka_sembuh">1</h2>
+            <h4 id="angka_sembuh">1</h4>
             <h6 id="status_sembuh">Sembuh</h6>
           </div>
           <div
             class="card-body d-flex flex-column justify-content-center"
             id="meninggal"
           >
-            <h2 id="angka_meninggal">0</h2>
+            <h4 id="angka_meninggal">0</h4>
             <h6 id="status_meninggal">Meninggal</h6>
           </div>
         </div>
@@ -244,7 +244,133 @@
         </div>
       </div>
     </section>
-    <section class="map"></section>
+    <section class="container map">
+      <!-- <div class="option my-5">
+        <ul class="list-options">
+          <li>
+            <a href="http://" target="_blank" rel="noopener noreferrer"
+              >Heatmap KERR</a
+            >
+          </li>
+          <div class="divider">|</div>
+          <li>
+            <a href="http://" target="_blank" rel="noopener noreferrer"
+              >Heatmap KERT</a
+            >
+          </li>
+          <div class="divider">|</div>
+          <li>
+            <a href="http://" target="_blank" rel="noopener noreferrer"
+              >Heatmap ODP</a
+            >
+          </li>
+          <div class="divider">|</div>
+          <li>
+            <a href="http://" target="_blank" rel="noopener noreferrer"
+              >Heatmap PDP (Menunggu Hasil)</a
+            >
+          </li>
+          <div class="divider">|</div>
+          <li>
+            <a href="http://" target="_blank" rel="noopener noreferrer"
+              >Heatmap PDP (Positif)</a
+            >
+          </li>
+          <div class="divider">|</div>
+          <li>
+            <a href="http://" target="_blank" rel="noopener noreferrer"
+              >Tagging Lokasi Sebaran ODP/PDP</a
+            >
+          </li>
+        </ul>
+      </div> -->
+
+      <div class="dropdown mt-5">
+        <a
+          class="btn btn-primary dropdown-toggle"
+          href="#"
+          role="button"
+          id="dropdownMenuLink"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          data-flip="false"
+        >
+          Heatmap Options
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Heatmap KERR</a>
+          <a class="dropdown-item" href="#">Heatmap KERT</a>
+          <a class="dropdown-item" href="#">Heatmap ODP</a>
+          <a class="dropdown-item" href="#">Heatmap PDP (Menunggu Hasil)</a>
+          <a class="dropdown-item" href="#">Heatmap PDP (Positif)</a>
+          <a class="dropdown-item" href="#">Tagging Lokasi Sebaran ODP/PDP</a>
+        </div>
+      </div>
+      <div class="heatmap mt-2">
+        <img class="img-fluid" src="assets/covid_heatmap.png" alt="" />
+      </div>
+    </section>
+    <section class="container covid-grafik mt-5">Grafik covid19</section>
+    <section class="container rs_rujukan mt-5">
+      <p id="caption_title_rs">Daftar Rumah Sakit Rujukan di Kota Manado</p>
+      <p id="caption_rs">
+        Berikut ini adalah rumah sakit yang menjadi rujukan untuk pasien dengan
+        status Pasien dalam Pengawasan. Anda harus mengunjungi fasilitas
+        kesehatan terdekat terlebih dahulu seperti klinik/rumah sakit umum
+        sebelum akhirnya dapat dirujuk ke rumah sakit khusus dibawah ini.
+      </p>
+      <div id="rumah_sakit">
+        <div
+          class="card-body d-flex flex-column justify-content-center align-items-start rounded-lg my-2 mx-2"
+          id="rsupkandou"
+        >
+          <h6>RSUD Prof. Dr. R. D Kandou</h6>
+          <span>Jl. R.W Monginsidi No. 56, Malalayang, Manado</span>
+          <span>No. Tlp. 0431 - 8383058 / 0431 - 838204</span>
+          <a href="https://www.rsupkandou.com">https://www.rsupkandou.com</a>
+        </div>
+        <div
+          class="card-body d-flex flex-column justify-content-center rounded-lg my-2 mx-2"
+          id="rsudtondano"
+        >
+          <h6>RSUD Dr. Sam Ratulangi</h6>
+          <span>Jl. Suprapto Luaan, Tondano Timur</span>
+          <span>No. Tlp. 0431 - 321171 / 0431 - 321172</span>
+          <a href="https://www.rsupkandou.com">https://www.rsudtondano.com</a>
+        </div>
+      </div>
+    </section>
+    <section class="container my-5" id="himbauan">
+      <div class="my-1 mx-1" id="content-one">
+        <p id="title">Himbauan Pemerintah Kota Manado</p>
+        <p>
+          Walikota Manado G.S Vicky Lumentut mengajak warga Kota manado untuk
+          bekerja sama dalam menghindari dan mewaspadaidiri dari Covid-19,
+          dengan melakukan pola hidup dan berdoa memohon perlindungan Tuhan
+          <br />
+          <br />
+          Untuk situasi darurat, segera telepon Call Center 112 yang bisa
+          diakses tanpa pulsa dan tanpa SIM Card sekalipun, Layanan Call Center
+          Manado Siaga 112 tetap siaga 1 x 24 jam
+        </p>
+      </div>
+      <div class="embed-responsive my-1 mx-1 embed-responsive-16by9">
+        <iframe
+          class="embed-responsive-item"
+          src="https://www.youtube.com/embed/YQSEr4zPBTI"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+    <footer>
+      <p>
+        Powered by <strong>PANADA</strong> &#169;2020 UPTD Pengelolaan Data dan
+        Informasi Geospasial Kota Manado.
+      </p>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

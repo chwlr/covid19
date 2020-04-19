@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@100;300;400;500&display=swap');
 
 * {
   font-family: 'Raleway', sans-serif;
@@ -8,6 +8,10 @@ header {
   background-color: #58befe;
 }
 
+p {
+  font-size: 0.9rem;
+}
+
 
 nav a {
   color: white;
@@ -15,25 +19,31 @@ nav a {
   font-weight: 600;
 }
 
-#jumlah_kasus_title {
-  padding: 0 1.25rem 0 1.25rem;
-  color: rgb(15, 28, 99);
+#jumlah_kasus {
+  background-color: #58befe;
 }
 
-#detail_status {
-  padding: 8px 0 8px 0;
+#jumlah_kasus_title {
+  padding: 0 1.25rem 0 1.25rem;
+  color: rgb(255, 255, 255);
+}
+
+.detail_status {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #terkonfirmasi,
 #positif,
 #sembuh,
 #meninggal {
-  background-color: #eeeeee;
+  background-color: #3792cb;
   border-radius: 10px;
-  width: auto;
+  width: 280px;
   height: 9rem;
   margin: 1rem 1rem 1rem 1rem;
-  color: rgb(15, 28, 99);
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 
@@ -84,4 +94,143 @@ p {
 
 span {
   font-size: 10px;
+}
+
+/* .list-options {
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+} */
+
+li {
+  list-style: none;
+}
+
+li a {
+  color: black;
+}
+
+li a:visited {
+  color: #3792cb;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #3792cb;
+  text-decoration: none;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+  background-color: #3792cb !important;
+}
+
+#caption_title_rs {
+  font-weight: 600;
+}
+
+#caption_rs {
+  text-align: justify;
+  font-size: 0.9rem;
+}
+
+#rsupkandou,
+#rsudtondano {
+  background-color: #3792cb;
+  color: white;
+}
+
+#rsupkandou a {
+  font-size: 0.25rem;
+  color: rgb(255, 255, 255);
+}
+
+#rsupkandou a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#rsupkandou a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#rsudtondano a {
+  font-size: 0.25rem;
+  color: rgb(255, 255, 255);
+}
+
+#rsudtondano a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#rsudtondano a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#content-one p {
+  text-align: left;
+}
+
+#content-one #title {
+  text-align: left;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+footer {
+  text-align: center;
+}
+
+
+@media only screen and (min-width: 800px) {
+  .detail_status {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .container-grid {
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-areas:
+      "item1 item2"
+      "item3 item4";
+  }
+
+  #rumah_sakit {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #himbauan {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  #terkonfirmasi,
+  #positif,
+  #sembuh,
+  #meninggal {
+    background-color: #eeeeee;
+    border-radius: 10px;
+    width: 150px;
+    height: 9rem;
+    margin: 1rem 1rem 1rem 1rem;
+    color: rgb(15, 28, 99);
+    text-align: center;
+  }
 }
